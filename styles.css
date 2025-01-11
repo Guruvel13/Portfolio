@@ -1,0 +1,396 @@
+/* General Styles */
+html {
+    scroll-padding-top: 80px; /* Adjust based on the height of your fixed header */
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Premium dark background color */
+    color: #c5c6c7; /* Premium light font color */
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+    color: #4e4e50; /* Premium color for headings */
+    animation: fadeIn 1s ease;
+}
+
+p {
+    margin-top: 20px;
+    color: #6f2232; /* Premium color for paragraphs */
+}
+
+/* Header Section Styles */
+header {
+    background-color: #000000; /* Premium background color for the header */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+    padding: 10px 0; /* Padding for vertical spacing */
+    position: sticky; /* Makes the header sticky */
+    top: 0; /* Ensures it sticks to the top */
+    z-index: 1000; /* Keeps it above other elements */
+}
+
+
+/* Header Container */
+.container-header {
+    max-width: 960px; /* Centers content within a fixed width */
+    margin: 0 auto; /* Centers the header container */
+    padding: 0 20px; /* Adds horizontal padding */
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Distributes logo and nav evenly */
+    align-items: center; /* Centers items vertically */
+}
+
+/* Logo Styles */
+header .logo img {
+    width: 50px; /* Adjust logo size */
+    display: block; /* Ensures predictable behavior */
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none; /* Removes default bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Aligns nav items horizontally */
+}
+
+nav ul li {
+    margin-right: 20px; /* Space between navigation items */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Removes margin for the last item */
+}
+
+nav ul li a {
+    text-decoration: none; /* Removes underline from links */
+    color: #c5c6c7; /* Premium color for links */
+    font-weight: bold; /* Makes links more prominent */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+    color: #6f2232; /* Changes color on hover */
+}
+
+/* Home Section Styles */
+.home-section {
+    background-color: #ffffff; /* Premium background color */
+    padding: 50px 0; /* Vertical padding for spacing */
+}
+
+/* Profile Container */
+.container-profile {
+    max-width: 960px; /* Fixed width for centered content */
+    margin: 0 auto; /* Centers the container */
+    display: flex; /* Flexbox layout for alignment */
+    justify-content: space-between; /* Distributes text and image evenly */
+    align-items: center; /* Vertically centers content */
+    padding: 0 20px; /* Horizontal padding */
+}
+
+/* Text Content */
+.text-content {
+    max-width: 50%; /* Limits text width */
+    color: #c5c6c7; /* Premium text color */
+}
+
+.text-content h1 {
+    font-size: 2.5em; /* Large heading font size */
+    margin: 0; /* Removes default margin */
+    color: #4e4e50; /* Premium primary color */
+    animation: fadeIn 1s ease-in-out; /* Smooth fade-in animation */
+}
+.text-content h2 {
+    font-size: 1.5em; /* Slightly smaller heading size */
+    color: #4e4e50; /* Premium primary color */
+    margin-top: 10px; /* Space between headings */
+}
+
+.text-content p {
+    margin-top: 20px; /* Space between text elements */
+    font-size: 1.1em; /* Slightly larger font size */
+    color: #6f2232; /* Premium secondary text color */
+    line-height: 1.6; /* Improves readability */
+}
+
+/* Image Content */
+.image-content {
+    max-width: 40%; /* Limits image width */
+    text-align: center; /* Centers image horizontally */
+}
+
+.image-content img {
+    width: 100%; /* Ensures image scales with container */
+    border-radius: 10px; /* Smooth corners for the image */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds depth to the image */
+}
+
+/* About Section Styles */
+.about {
+    background-color: #4e4e50; /* Premium background color */
+    padding: 60px 20px; /* Adds vertical and horizontal spacing */
+    text-align: center; /* Centers the content */
+}
+
+.about-content {
+    max-width: 960px; /* Restricts the width for better readability */
+    margin: 0 auto; /* Centers the content container */
+    font-family: 'Helvetica Neue', sans-serif; /* Sets a clean font style */
+    color: #c5c6c7; /* Premium text color */
+}
+
+/* Heading Styles */
+.about-content h2 {
+    font-size: 2.5em; /* Large font size for heading */
+    color: #1a1a1d; /* Premium color to highlight the heading */
+    margin-bottom: 20px; /* Adds spacing below the heading */
+}
+
+/* Paragraph Styles */
+.about-content p {
+    font-size: 1.2em; /* Slightly larger text for readability */
+    line-height: 1.6; /* Improves readability by increasing line height */
+    color: #c5c6c7; /* Premium paragraph text color */
+    margin: 0 auto; /* Centers the paragraph */
+    max-width: 800px; /* Restricts the width of the paragraph */
+    text-align: center; /* Aligns text to the center */
+}
+
+/* Skills Section Styles */
+.skills {
+    background-color: #1a1a1d; /* Premium background color */
+    padding: 60px 20px; /* Adds spacing around the section */
+    text-align: center; /* Centers the heading */
+}
+
+.skill-content h2 {
+    font-size: 2.5em; /* Large font size for heading */
+    color: #4e4e50; /* Premium color for the heading */
+    margin-bottom: 40px; /* Adds space below the heading */
+    font-family: 'Helvetica Neue', sans-serif; /* Clean font style */
+}
+
+.skills-container {
+    display: flex; /* Aligns skills horizontally */
+    justify-content: space-evenly; /* Evenly spaces skills */
+    flex-wrap: wrap; /* Ensures skills wrap on smaller screens */
+    gap: 20px; /* Adds space between skill cards */
+    max-width: 960px; /* Restricts container width */
+    margin: 0 auto; /* Centers the container */
+}
+
+.skill {
+    background-color: #4e4e50; /* Premium background color for cards */
+    padding: 20px; /* Adds internal spacing */
+    border-radius: 10px; /* Smoothens card edges */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth */
+    text-align: center; /* Centers card content */
+    width: 30%; /* Sets card width */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.skill img {
+    width: 100%; /* Ensures image scales with container */
+    border-radius: 10px; /* Smooth corners for the image */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds depth to the image */
+}
+
+.skill h3 {
+    font-size: 1.5em; /* Larger font for skill title */
+    color: #c5c6c7; /* Premium color for titles */
+    margin-bottom: 10px; /* Adds space below title */
+}
+
+.skill p {
+    font-size: 1em; /* Normal paragraph size */
+    color: #c5c6c7; /* Premium text color */
+    margin-bottom: 20px; /* Adds space below text */
+}
+
+.view-works {
+    display: inline-block; /* Makes the link look like a button */
+    padding: 10px 20px; /* Adds spacing inside the button */
+    background-color: #6f2232; /* Premium button color */
+    color: #c5c6c7; /* Premium text color for contrast */
+    text-decoration: none; /* Removes underline */
+    border-radius: 5px; /* Smoothens button edges */
+    font-size: 1em; /* Sets font size */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.view-works:hover {
+    background-color: #4e4e50; /* Darker color on hover */
+}
+
+/* Hover Effects for Skills */
+.skill:hover {
+    transform: translateY(-10px); /* Slight upward movement */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+/* Project hover effect */
+.project:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Projects Section */
+.projects {
+    background-color: #ffffff; /* Premium background color */
+    padding: 60px 20px; /* Adds spacing around the section */
+    text-align: center; /* Centers the heading */
+}
+
+.project-content h2 {
+    font-size: 2.5em; /* Large font size for heading */
+    color: #4e4e50; /* Premium color for the heading */
+    margin-bottom: 40px; /* Adds space below the heading */
+    font-family: 'Helvetica Neue', sans-serif; /* Clean font style */
+}
+
+.projects-container {
+    display: flex; /* Aligns projects horizontally */
+    justify-content: space-evenly; /* Evenly spaces projects */
+    flex-wrap: wrap; /* Ensures projects wrap on smaller screens */
+    gap: 20px; /* Adds space between project cards */
+    max-width: 960px; /* Restricts container width */
+    margin: 0 auto; /* Centers the container */
+}
+
+.project {
+    background-color: #4e4e50; /* Premium background color for cards */
+    padding: 20px; /* Adds internal spacing */
+    border-radius: 10px; /* Smoothens card edges */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth */
+    text-align: center; /* Centers card content */
+    width: 30%; /* Sets card width */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+
+.project h3 {
+    font-size: 1.5em; /* Larger font for project title */
+    color: #c5c6c7; /* Premium color for titles */
+    margin-bottom: 10px; /* Adds space below title */
+}
+
+.project p {
+    font-size: 20px; /* Reduced paragraph size */
+    color: #c5c6c7; /* Premium text color */
+    margin-bottom: 40px; /* Adds space below text */
+
+}
+
+.view-works {
+    display: inline-block; /* Makes the link look like a button */
+    padding: 10px 20px; /* Adds spacing inside the button */
+    background-color: #6f2232; /* Premium button color */
+    color: #c5c6c7; /* Premium text color for contrast */
+    text-decoration: none; /* Removes underline */
+    border-radius: 5px; /* Smoothens button edges */
+    font-size: 1em; /* Sets font size */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.view-works:hover {
+    background-color: #4e4e50; /* Darker color on hover */
+}
+
+/* Hover effect */
+.project:hover {
+    transform: translateY(-10px); /* Slight upward movement */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+/* Footer Section */
+footer {
+    background: linear-gradient(135deg, #000000, #4e4e50);
+    color: #c5c6c7;
+    padding: 16px 0;
+    text-align: center;
+    font-size: 16px;
+    position: relative;
+    box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Footer Content */
+footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Social Media Links */
+footer .social-links {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .social-links a {
+    font-size: 24px;
+    color: #c5c6c7;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+footer .social-links a:hover {
+    transform: translateY(-8px);
+    color: #6f2232;
+}
+
+/* Footer Bottom */
+footer .footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #c5c6c7;
+}
+
+footer .footer-bottom a {
+    text-decoration: none;
+    color: #c5c6c7;
+    transition: color 0.3s ease;
+}
+
+footer .footer-bottom a:hover {
+    color: #6f2232;
+}
+
+footer .footer-bottom p {
+    margin: 0;
+}
+
+/* Back-to-Top Button */
+.back-to-top {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #c5c6c7;
+    text-decoration: none;
+    padding: 8px 12px;
+    border: 2px solid #c5c6c7;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #c5c6c7;
+    color: #4e4e50;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    footer {
+        font-size: 14px;
+        padding: 10px;
+    }
+    footer .social-links a {
+        font-size: 20px;
+    }
+}
